@@ -9,8 +9,11 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer WeaponRenderer;
 
+    public GameObject Fighter;
+
     public void SetCreature(GameObject creature)
     {
+        
         foreach (GameObject obj in AllCreatures)
         {
             if (obj == creature)
@@ -23,9 +26,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (Fighter.activeInHierarchy)
+        {
+            WeaponRenderer.gameObject.transform.position = new Vector2(1.450f, .590f);
+        }
+        else 
+        {
+            WeaponRenderer.gameObject.transform.position = new Vector2(1.603f, 0.695f);
+        }
+
     }
     public void SetWeapon(Sprite newSprite)
     {
+        if (Fighter.activeInHierarchy) {
+            WeaponRenderer.gameObject.transform.position = new Vector2(1.450f, .590f);
+        } else {
+            WeaponRenderer.gameObject.transform.position = new Vector2(1.603f, 0.695f);
+
+        }
         WeaponRenderer.sprite = newSprite;
     }
 

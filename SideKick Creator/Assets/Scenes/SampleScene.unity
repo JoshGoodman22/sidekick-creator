@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1802222523}
+      - m_Target: {fileID: 1802222524}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SetCreature
         m_Mode: 2
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1802222523}
+      - m_Target: {fileID: 1802222524}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SetCreature
         m_Mode: 2
@@ -1290,7 +1290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1802222523}
+      - m_Target: {fileID: 1802222524}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SetCreature
         m_Mode: 2
@@ -1586,7 +1586,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1802222523}
+      - m_Target: {fileID: 1802222524}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SetCreature
         m_Mode: 2
@@ -2452,7 +2452,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1802222522}
-  - component: {fileID: 1802222523}
   - component: {fileID: 1802222524}
   m_Layer: 0
   m_Name: Player
@@ -2477,25 +2476,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1802222523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1802222521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ece7ba6d4e6864ee9b15d91e9b01453c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllCreatures:
-  - {fileID: 1307828066}
-  - {fileID: 1733746162}
-  - {fileID: 123267543}
-  - {fileID: 668371332}
-  - {fileID: 1821472187}
-  WeaponRenderer: {fileID: 0}
 --- !u!114 &1802222524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2508,8 +2488,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece7ba6d4e6864ee9b15d91e9b01453c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllCreatures: []
+  AllCreatures:
+  - {fileID: 1733746162}
+  - {fileID: 123267543}
+  - {fileID: 1307828066}
+  - {fileID: 1821472187}
+  - {fileID: 668371332}
   WeaponRenderer: {fileID: 1320699664}
+  Fighter: {fileID: 668371332}
 --- !u!1 &1821472187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2779,7 +2765,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1802222523}
+      - m_Target: {fileID: 1802222524}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: SetCreature
         m_Mode: 2
